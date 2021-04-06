@@ -38,26 +38,7 @@ pipeline{
             }
         }
 
-        stage('JAVA Build Test'){
-            steps {
-                echo 'JAVA Build'
-                dir('./execute'){
-                    sh 'sh ./buildTest.sh'
-                }
-            }
 
-            post {
-                success {
-                    echo 'SUCCESSFULLY JAVA Build Test'
-                    notifySuccessful('JAVA Build Test')
-                }
-
-                failure {
-                    echo 'Failed JAVA Build Test'
-                    notifyFailed('JAVA Build Test Failed')
-                }
-            }
-        }
         stage('JAVA Build'){
             steps {
                 echo 'JAVA Build'
