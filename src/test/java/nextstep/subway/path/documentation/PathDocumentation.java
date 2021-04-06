@@ -37,13 +37,13 @@ public class PathDocumentation extends Documentation {
         super.setUp(restDocumentation);
         회원_생성_요청(ADULT_EMAIL, PASSWORD, ADULT_AGE);
 
-        교대역 = 지하철역_등록되어_있음("교대역").as(StationResponse.class);
-        강남역 = 지하철역_등록되어_있음("강남역").as(StationResponse.class);
-        양재역 = 지하철역_등록되어_있음("양재역").as(StationResponse.class);
-        남부터미널역 = 지하철역_등록되어_있음("남부터미널역").as(StationResponse.class);
+        교대역 = 지하철역_등록되어_있음("교대역1").as(StationResponse.class);
+        강남역 = 지하철역_등록되어_있음("강남역1").as(StationResponse.class);
+        양재역 = 지하철역_등록되어_있음("양재역1").as(StationResponse.class);
+        남부터미널역 = 지하철역_등록되어_있음("남부터미널역1").as(StationResponse.class);
 
-        LineResponse 이호선 = 지하철_노선_등록되어_있음("2호선", "green", 교대역, 강남역, 70, 70);
-        LineResponse 신분당선 = 지하철_노선_등록되어_있음("신분당선", "green", 강남역, 양재역, 30, 30);
+        LineResponse 이호선 = 지하철_노선_등록되어_있음("2호선1", "green", 교대역, 강남역, 70, 70);
+        LineResponse 신분당선 = 지하철_노선_등록되어_있음("신분당선1", "green", 강남역, 양재역, 30, 30);
         삼호선 = 지하철_노선_등록되어_있음("3호선", "green", 교대역, 남부터미널역, 16, 16);
 
         지하철_노선에_지하철역_등록_요청(삼호선, 남부터미널역, 양재역, 22, 20);
