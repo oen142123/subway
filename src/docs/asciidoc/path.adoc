@@ -1,0 +1,20 @@
+[[path]]
+== 지하철 경로
+
+=== 경로 조회
+
+==== Request Example
+
+include::{snippets}/path/http-request.adoc[]
+
+==== Response Example
+
+include::{snippets}/path/http-response.adoc[]
+
+==== Request Parameter Guide
+
+include::{snippets}/path/request-parameters.adoc[]
+
+==== Response Field Guide
+
+include::{snippets}/path/response-fields.adoc[]
