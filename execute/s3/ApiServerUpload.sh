@@ -8,7 +8,7 @@ fi
 
 mkdir -vp ./${ApiServer}
 
-cp ../application-api/build/libs/* ./${ApiServer}
+cp ../build/libs/* ./${ApiServer}
 
 cp ./codeDeploy/* ./${ApiServer}
 
