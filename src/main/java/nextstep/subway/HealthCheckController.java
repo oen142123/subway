@@ -15,6 +15,6 @@ public class HealthCheckController {
         logger.info("api UP");
         logger.error("api UP");
         logger.debug("api UP");
-        return "UP";
+        return "{status:\"UP\"}";
     }
 }
