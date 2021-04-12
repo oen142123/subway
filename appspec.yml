@@ -3,7 +3,7 @@ os: linux     # ec2에 배포하는 경우 필수 값이며, linux를 사용함�
 
 files:        # S3에 업로드 된 파일이 Ec2에 어디로 이동 시킬지 지정합니다.
   - source: /   # Source 설정에 '/'가 되어 있는것은 Codebuild,S3,GitHub 등에서 받은 파일을 의미합니다.
-    destination: /home/ec2-user/ApiSever #이동할 위치를 설정하는 옵션 -> 배포 되는 인스턴스 기준
+    destination: /home/ec2-user/ApiServer #이동할 위치를 설정하는 옵션 -> 배포 되는 인스턴스 기준
 
 permissions:    #deploy 압축이 풀린 후 소유자를 지정해줍니다. 지정을 안 해주면 root로 지정 됩니다.
   - object: /
