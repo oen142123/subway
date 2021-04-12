@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 echo "> Health check 시작"
