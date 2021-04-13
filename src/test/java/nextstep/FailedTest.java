@@ -7,6 +7,6 @@ public class FailedTest {
 
     @Test
     void name() {
-        Assertions.assertThat(1).isEqualTo(2);
+            Assertions.assertThat(1).isEqualTo(2);
     }
 }
